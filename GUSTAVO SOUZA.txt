@@ -1,0 +1,101 @@
+1- 
+
+Algoritmo "semnome"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gustavo Moreira
+// Data atual  : 04/07/2024
+Var
+ct, tensao, resi: real
+
+Inicio
+escreva("Digite a Tensão: ")
+leia(tensao)
+escreva("Digite a corrente: ")
+leia(ct)
+resi <- ct * tensao
+escreval("O valor da resistência é", resi )
+Fimalgoritmo
+
+2-
+Algoritmo "Calculo Potencia"
+
+Var
+
+c, t, p:real
+
+Inicio
+
+Escreval ("Digite a corrente")
+leia(c)
+
+Escreval("Digite a tensão")
+leia(t)
+
+p <- c * t
+
+escreval ("A Potencia é", p)
+
+Fimalgoritmo
+
+3- 
+Algoritmo "consumo"
+
+var
+eq1, eq2, eq3, hrs, consumo: real
+
+inicio
+
+escreval ("Digite o valor em wtts eqp 1")
+leia(eq1)
+
+escreval ("Digite o valor em wtts eqp 2")
+leia(eq2)
+
+escreval ("Digite o valor em wtts eqp 3")
+leia(eq3)
+
+escreval ("Digite a quantidade de horas utilizadas")
+leia(hrs)
+
+consumo <- eq1 + eq2 + eq3 * hrs * 0,758
+
+escreval ("O consumo é de", consumo)
+
+
+4- 
+algoritmo "CalculoConsumoEnergeticoSimplificado"
+var
+    consumoWatts, horasUso, diasUso: real
+    taxaEnergia, consumoKWh, custo: real
+inicio
+    taxaEnergia := 0.758
+    escreva("Informe o consumo do equipamento em Watts: ")
+    leia(consumoWatts)
+    escreva("Informe as horas de uso diário do equipamento: ")
+    leia(horasUso)
+    escreva("Informe o número de dias de uso do equipamento: ")
+    leia(diasUso)
+    consumoKWh := (consumoWatts * horasUso * diasUso) / 1000
+    custo := consumoKWh * taxaEnergia
+    escreval("Consumo do equipamento em kWh: ", consumoKWh)
+    escreval("Custo do consumo em R$: ", custo)
+fimalgoritmo
+
+5- 
+algoritmo "CalculoCorrentePotencia"
+var
+    resistencia, tensao, corrente, potencia: real
+inicio
+    escreva("Informe o valor da resistência (Ohms): ")
+    leia(resistencia)
+    escreva("Informe o valor da tensão (Volts): ")
+    leia(tensao)
+    corrente := tensao / resistencia
+    potencia := tensao * corrente
+    escreval("Corrente (Amperes): ", corrente)
+    escreval("Resistência (Ohms): ", resistencia)
+    escreval("Tensão (Volts): ", tensao)
+    escreval("Potência (Watts): ", potencia)
+fimalgoritmo
